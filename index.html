@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SkyHunt RPG — Server Minecraft RPG Việt Nam</title>
+<meta name="description" content="SkyHunt RPG — server Minecraft RPG Việt Nam miễn phí: nhân vật gacha có tuyệt kỹ cutscene, phụ bản cổng theo cấp, trùm thế giới, Liệt Giới Hư Không. Vào ngay: skyhunt.online">
+<meta name="keywords" content="server minecraft viet nam, minecraft rpg, server rpg, skyhunt, minecraft gacha, server minecraft hay, choi minecraft online">
+<link rel="canonical" href="https://skyhunt.online/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SkyHunt RPG — Server Minecraft RPG Việt Nam">
+<meta property="og:description" content="Nhân vật gacha có tuyệt kỹ cutscene, phụ bản cổng, trùm thế giới và Liệt Giới Hư Không. IP: skyhunt.online">
+<meta property="og:url" content="https://skyhunt.online/">
+<meta property="og:image" content="https://skyhunt.online/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoGame","name":"SkyHunt RPG",
+ "gamePlatform":"Minecraft Java Edition","applicationCategory":"Game","inLanguage":"vi",
+ "description":"Server Minecraft RPG Việt Nam: nhân vật gacha có tuyệt kỹ cutscene, phụ bản cổng theo cấp, trùm thế giới, Liệt Giới Hư Không.",
+ "url":"https://skyhunt.online/","offers":{"@type":"Offer","price":"0","priceCurrency":"VND"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&display=swap">
+<style>
+:root{
+  --bg:#fafaf9; --panel:#ffffff; --fg:#1c1b1f; --mut:#6e6b76; --line:#e7e5ec;
+  --accent:#9a6b00; --accent-bg:#f6efdd; --code:#f3f2f6;
+}
+@media (prefers-color-scheme: dark){ :root{
+  --bg:#141318; --panel:#1b1a21; --fg:#eceaf2; --mut:#97939f; --line:#2a2833;
+  --accent:#e3b84e; --accent-bg:#2a2414; --code:#232129; color-scheme:dark } }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.7 'Be Vietnam Pro',system-ui,sans-serif;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:860px;margin:0 auto;padding:0 0 60px}
+.top{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.tm{font-weight:800;font-style:italic;font-size:18px;background:linear-gradient(180deg,#3a3f52 20%,#7f93c4 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+@media (prefers-color-scheme: dark){ .tm{background:linear-gradient(180deg,#fff 30%,#9cc7ff 90%);-webkit-background-clip:text;background-clip:text} }
+.top a.wiki{margin-left:auto;font-weight:700;font-size:14px}
+.hero{background:linear-gradient(135deg,#0b1c3a 0%,#122a56 55%,#0d2142 100%);border:1px solid #1d3a6e;border-radius:18px;
+  padding:44px 30px;margin:24px 0;color:#fff;text-align:center;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(500px 220px at 85% 0%,rgba(110,170,255,.25),transparent 70%)}
+.wordmark{position:relative;font-weight:800;font-style:italic;font-size:clamp(44px,9vw,72px);letter-spacing:.04em;line-height:1;
+  background:linear-gradient(180deg,#ffffff 30%,#9cc7ff 90%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 3px 0 #0a1830) drop-shadow(0 0 22px rgba(80,140,255,.4))}
+.hero .sub{position:relative;font-size:13px;font-weight:700;letter-spacing:.46em;color:#9cc7ff;margin:8px 0 18px}
+.pills{position:relative;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.pills span{font-size:12.5px;font-weight:700;letter-spacing:.12em;border:1px solid #2c4d8f;border-radius:7px;padding:5px 14px;color:#cfe0ff;background:#12264c}
+.ipbtn{position:relative;display:inline-flex;align-items:center;gap:10px;margin-top:22px;font:800 19px 'Be Vietnam Pro';color:#d9f7c9;
+  background:rgba(70,160,80,.18);border:1px solid rgba(120,220,120,.45);border-radius:999px;padding:12px 26px;cursor:pointer}
+.ipbtn i{width:9px;height:9px;border-radius:50%;background:#6fe26f;box-shadow:0 0 9px #6fe26f}
+.hero .note{position:relative;margin-top:12px;font-size:13px;color:#8fa6d4}
+h1{font-size:26px;margin:34px 0 8px;font-weight:800;text-wrap:balance}
+h2{font-size:20px;margin:30px 0 8px;font-weight:800}
+p{margin:8px 0;color:var(--fg)}
+.lead{color:var(--mut)}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0}
+.ft{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.ft b{display:block;font-size:16px;margin-bottom:4px}
+.ft span{font-size:14.5px;color:var(--mut)}
+.steps{counter-reset:s;display:flex;flex-direction:column;gap:10px;margin:14px 0}
+.st{counter-increment:s;display:flex;gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 16px}
+.st::before{content:counter(s);flex:none;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center;margin-top:3px}
+kbd{font-family:inherit;font-weight:700;background:var(--code);border:1px solid var(--line);border-radius:6px;padding:1px 9px}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:var(--mut);font-size:13.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><span class="tm">SKYHUNT</span><a class="wiki" href="https://wiki.skyhunt.online/">Wiki hướng dẫn →</a></div>
+
+  <div class="hero">
+    <div class="wordmark">SKYHUNT</div>
+    <div class="sub">MINECRAFT SERVER</div>
+    <div class="pills"><span>SKYBLOCK</span><span>RPG</span><span>SMP</span></div>
+    <br>
+    <button class="ipbtn" id="ip" type="button"><i></i> skyhunt.online</button>
+    <div class="note" id="ipnote">bấm để sao chép IP · Minecraft Java · miễn phí</div>
+  </div>
+
+  <h1>Server Minecraft RPG Việt Nam — nhân vật gacha, phụ bản, trùm thế giới</h1>
+  <p class="lead">SkyHunt RPG là server Minecraft miễn phí cho cộng đồng Việt: chọn một trong 22 nhân vật với bộ kỹ năng và tuyệt kỹ cutscene riêng, lập đội đánh phụ bản cổng theo cấp, săn trùm thế giới và thử vận may ở Liệt Giới Hư Không — chế độ "rút lui hay tham lam" không giới hạn tầng.</p>
+
+  <div class="feats">
+    <div class="ft"><b>22 nhân vật gacha</b><span>Mỗi nhân vật một lối chơi, tuyệt kỹ có cutscene điện ảnh. Quay trùng lên tinh C1–C6.</span></div>
+    <div class="ft"><b>Phụ bản cổng theo cấp</b><span>7 cổng chính + đền thử thách, đi đội 1–4 người, trùm có cơ chế riêng từng con.</span></div>
+    <div class="ft"><b>Liệt Giới Hư Không</b><span>Càng xuống sâu thưởng nhân ×1.6 → ×4, thua mất túi. Rút lui hay tham lam — bạn chọn.</span></div>
+    <div class="ft"><b>Cả một thị trấn</b><span>Câu cá minigame, đấu giá, nuôi linh thú, trang phục, PvP công bằng, sự kiện Thủ Hộ mỗi giờ.</span></div>
+  </div>
+
+  <h2>Vào chơi trong 3 bước</h2>
+  <div class="steps">
+    <div class="st"><div>Mở <b>Minecraft Java</b> → Multiplayer → Add Server → dán <kbd>skyhunt.online</kbd></div></div>
+    <div class="st"><div>Vào server, <b>đồng ý tải gói tài nguyên</b> khi được hỏi (vũ khí 3D, giao diện, trang phục).</div></div>
+    <div class="st"><div>Chọn nhân vật tại Đảo Cổng Trời và bấm <b>Bắt Đầu Cuộc Chiến</b> — tân thủ nhận chuỗi quà tới Lv 25.</div></div>
+  </div>
+
+  <h2>Tìm hiểu thêm</h2>
+  <p>Toàn bộ cơ chế game — nhân vật, nguyên tố, trang bị, cổng, Liệt Giới, nạp — có tại <a href="https://wiki.skyhunt.online/"><b>wiki.skyhunt.online</b></a>.</p>
+
+  <footer><span>© SkyHunt RPG — server Minecraft Việt Nam</span><b>skyhunt.online</b></footer>
+</div>
+<script>
+document.getElementById('ip').onclick = function(){
+  var done = function(){ document.getElementById('ipnote').textContent = 'đã sao chép IP — dán vào Minecraft là vào được'; };
+  try { navigator.clipboard.writeText('skyhunt.online').then(done, done); } catch(e){ done(); }
+};
+</script>
+</body>
+</html>

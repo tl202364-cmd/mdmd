@@ -85,6 +85,14 @@ header .in{padding-block:84px 70px;position:relative}
 .btn.pri:hover{transform:translateY(-1px)}
 .btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--fg)}
 .btn.ghost:hover{border-color:var(--blue)}
+.wikis{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:560px;margin:16px auto 0}
+.wk{display:flex;flex-direction:column;align-items:center;gap:2px;border-radius:14px;padding:14px 12px;border:1.5px solid;transition:transform .15s,background .15s}
+.wk b{font:900 19px 'Be Vietnam Pro';letter-spacing:.08em}
+.wk span{font-size:12.5px;color:var(--mut);line-height:1.35;text-align:center}
+.wk.smp{border-color:#3d8f4a;background:rgba(60,160,80,.10)}.wk.smp b{color:#8ef59a}
+.wk.rpg{border-color:#3d6bbf;background:rgba(80,130,230,.10)}.wk.rpg b{color:#a9cbff}
+.wk:hover{transform:translateY(-2px)}.wk.smp:hover{background:rgba(60,160,80,.2)}.wk.rpg:hover{background:rgba(80,130,230,.2)}
+@media (max-width:420px){.wikis{grid-template-columns:1fr}}
 .ipnote{margin-top:12px;font-size:13.5px;color:var(--mut)}
 .stats{display:flex;gap:0;justify-content:center;flex-wrap:wrap;margin-top:44px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:rgba(14,20,38,.7)}
 .stats div{flex:1 1 150px;padding:16px 10px;border-right:1px solid var(--line)}
@@ -125,7 +133,7 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;al
 
 <nav class="gut"><div class="in">
   <span class="tm">SKYHUNT</span>
-  <div class="links"><a href="#tinhnang">Tính năng</a><a href="#batdau">Bắt đầu</a><a href="https://wiki.skyhunt.online/">Wiki</a></div>
+  <div class="links"><a href="#chedo">Chế độ</a><a href="#batdau">Bắt đầu</a><a href="https://wiki.skyhunt.online/smp.html">SMP Wiki</a><a href="https://wiki.skyhunt.online/">RPG Wiki</a></div>
   <button class="ipmini" data-ip type="button"><span class="dot"></span> skyhunt.online</button>
 </div></nav>
 
@@ -142,7 +150,10 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;al
     <div class="pills"><span>SKYBLOCK</span><span>RPG</span><span>SMP</span></div>
     <div class="cta">
       <button class="btn pri" data-ip type="button">▶&nbsp; Sao chép IP — skyhunt.online</button>
-      <a class="btn ghost" href="https://wiki.skyhunt.online/">Xem Wiki hướng dẫn</a>
+    </div>
+    <div class="wikis">
+      <a class="wk smp" href="https://wiki.skyhunt.online/smp.html"><b>SMP WIKI</b><span>Sinh tồn · kinh tế · đất · nghề</span></a>
+      <a class="wk rpg" href="https://wiki.skyhunt.online/"><b>RPG WIKI</b><span>Nhân vật gacha · phụ bản · trùm</span></a>
     </div>
     <div class="ipnote" id="ipnote">Minecraft Java · dán IP vào Multiplayer là vào được ngay</div>
     <div class="stats">
@@ -217,8 +228,8 @@ footer .in{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;al
 </div></section>
 
 <footer class="gut"><div class="in">
-  <span>© SkyHunt RPG — server Minecraft Việt Nam</span>
-  <span><a href="https://wiki.skyhunt.online/">Wiki</a> &nbsp;·&nbsp; <b style="color:var(--gold)">skyhunt.online</b></span>
+  <span>© SkyHunt — server Minecraft Việt Nam: SMP sinh tồn &amp; RPG</span>
+  <span><a href="https://wiki.skyhunt.online/smp.html">SMP Wiki</a> &nbsp;·&nbsp; <a href="https://wiki.skyhunt.online/">RPG Wiki</a> &nbsp;·&nbsp; <b style="color:var(--gold)">skyhunt.online</b></span>
 </div></footer>
 
 <script>
